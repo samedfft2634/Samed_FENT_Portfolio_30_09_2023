@@ -1,0 +1,14 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    text-align: center;
+    background-color: #131e25;
+    font-family: 'Times New Roman', Times, serif;
+    color: #FFF;
+    height: 100vh;
+}
+
