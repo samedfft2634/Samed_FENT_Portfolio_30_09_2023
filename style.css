@@ -13,7 +13,6 @@ body {
 	font-family: "Times New Roman", Times, serif;
 	color: #fff;
 	height: 100vh;
-    position: relative;
 }
 
 h1 {
@@ -129,14 +128,6 @@ img:hover {
 	margin: 6px;
 }
 
-.forms {
-	/* border: 2px solid red; */
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	align-items: center;
-}
-
 .username {
 	border: 2px solid #d2b48c;
 	outline: none;
@@ -174,7 +165,7 @@ img:hover {
 	outline: none;
 	background: transparent;
 	height: 150px;
-	width: 760px;
+	width: 100%;
 	font-size: 18px;
 	font-weight: 500;
 	line-height: 27px;
@@ -185,45 +176,89 @@ img:hover {
 	padding: 13px;
 	font-family: Helvetica, sans-serif;
 	resize: vertical;
+	color: #fff;
 }
 
-.forms button {
+.form {
+	/* border: 2px solid red; */
+	/* display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	margin-bottom: 20px;
+    padding-bottom: 20px; */
+	width: 50%;
+	margin: auto;
+	/* border: 2px solid blue; */
+}
+div.form button {
 	font-family: "Montserrat", sans-serif;
-	background-color: #99876D;
+	background-color: #99876d;
 	border: none;
-	height: 52px;
-	width: 760px;
-    font-size: 24px;
-    letter-spacing: 2px;
-    margin: -4px 0 0;
-    padding: 10px 0;
-    font-weight: 900;
-    text-align: center;
-    color: rgba(255, 255, 255, 0.442);
-    border-radius: 5px;
+	width: 100%;
+	font-size: 24px;
+	letter-spacing: 2px;
+	margin: 1rem 0;
+	padding: 1rem;
+	/* border: 2px solid red; */
+	font-weight: 900;
+	text-align: center;
+	color: rgba(255, 255, 255, 0.442);
+	border-radius: 5px;
 }
 
-.forms button:hover {
-    color: #ff4500;
+.form button:hover {
+	color: #ff4500;
+	padding: 1.5rem;
+	background-color: #d2b48c;
+}
+
+.form button:hover::after {
+	content: "🖅";
+	padding-left: 10px;
+	font-size: 2rem;
+	align-items: center;
 }
 
 .fix-but a {
-    position: fixed;
-    bottom: 0;
-    right: 0;
-    margin: 0 10px 10px 0;
-    padding: 10px;
-    height: 42px;
-    width: 100px;
-    background-color: #d2b48c;
-    border-radius: 10px;
-    font-size: 20px;
-    font-weight: 700;
-    text-decoration: none;
-    color: #fff;
+	position: fixed;
+	bottom: 0;
+	right: 0;
+	margin: 0 10px 10px 0;
+	padding: 10px;
+	height: 42px;
+	width: 42px;
+	background-color: #d2b48c;
+	border-radius: 50%;
+	font-size: 20px;
+	font-weight: 700;
+	text-decoration: none;
+	color: #fff;
 }
 
 .fix-but a:hover {
-    background-color: #ff4500;
-    cursor: pointer;
+	background-color: #ff4500;
+	cursor: pointer;
+	transform: translateY(-5px);
+	transition: 0.4s;
+	box-shadow: 0 0 20px turquoise;
+	color: turquoise;
+}
+
+.boxes input,
+.boxes textarea {
+	color: white;
+	width: 100%;
+}
+
+.boxes input:hover,
+.boxes textarea:hover {
+	box-shadow: 0 0 20px #ff4500, inset 0 0 5px #ff4500;
+}
+input:focus {
+	border: 2px solid #cc4949;
+}
+
+#textar:focus {
+	border: 2px solid #cc4949;
 }

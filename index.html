@@ -81,27 +81,42 @@
 					>
 				</div>
 				<h4 class="message">Send Message</h4>
-				<form action="#" class="forms">
-					<input
-						type="text"
-						placeholder="Username"
-						class="username"
-					/>
-					<input type="email" placeholder="Email" class="emails" />
-					<textarea
-						name="textarea"
-						id="textar"
-						cols="30"
-						rows="10"
-						placeholder="Your message"
-					></textarea>
-					<button>SEND</button>
-				</form>
+				<div class="form">
+					<form>
+						<div class="boxes">
+							<input
+								type="text"
+								placeholder="Username"
+								class="username"
+								required
+							/>
+						</div>
+						<div class="boxes">
+							<input
+								type="email"
+								placeholder="Email"
+								class="emails"
+							/>
+						</div>
+						<div class="boxes">
+							<textarea
+								name="textarea"
+								id="textar"
+								cols="30"
+								rows="10"
+								placeholder="Your message"
+								required
+							></textarea>
+						</div>
+
+						<button>SEND</button>
+					</form>
+				</div>
 			</footer>
 			<div class="fix-but">
 				<a href="#top" class="top">
-					Top <i class="fa-solid fa-arrow-up"></i>
-                </a>
+					<i class="fa-solid fa-arrow-up"></i>
+				</a>
 			</div>
 		</main>
 	</body>
