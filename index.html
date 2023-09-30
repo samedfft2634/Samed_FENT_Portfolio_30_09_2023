@@ -12,23 +12,28 @@
 			crossorigin="anonymous"
 			referrerpolicy="no-referrer"
 		/>
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Bungee+Shade&family=Montserrat:wght@400;500;600;700;800;900&family=Rampart+One&display=swap"
+			rel="stylesheet"
+		/>
 	</head>
 	<body>
-		<h1 id="top">SAMED FENT</h1>
-		<nav class="nav-top">
-			<a href="">Home</a>
-			<a href="">About</a>
-			<a href="">Projects</a>
-			<a href="">Contact</a>
-		</nav>
-		<article id="about">
-			<p>
-				Hi there &#128075; I am Samed Fent. I have a great passion for
-				software development...
-			</p>
-		</article>
-
-		<div class="main">
+		<main>
+			<h1 id="top">SAMED FENT</h1>
+			<nav class="nav-top">
+				<a href="#">Home</a>
+				<a href="#about">About</a>
+				<a href="#projects">Projects</a>
+				<a href="#contact">Contact</a>
+			</nav>
+			<article id="about">
+				<p>
+					Hi there &#128075; I am Samed Fent. I have a great passion
+					for software development...
+				</p>
+			</article>
 			<article id="projects">
 				<h3 class="project-header">My Projects</h3>
 				<div class="projects-img">
@@ -60,7 +65,7 @@
 				</div>
 			</article>
 			<footer>
-				<h3 class="footer-header">Contact Me</h3>
+				<h3 class="footer-header" id="contact">Contact Me</h3>
 				<div class="social-media">
 					<a href="https://github.com/samedfft2634"
 						><i class="fa-brands fa-github"></i>Github</a
@@ -76,9 +81,13 @@
 					>
 				</div>
 				<h4 class="message">Send Message</h4>
-				<form action="#">
-					<input type="text" placeholder="Username" />
-					<input type="email" placeholder="Email" />
+				<form action="#" class="forms">
+					<input
+						type="text"
+						placeholder="Username"
+						class="username"
+					/>
+					<input type="email" placeholder="Email" class="emails" />
 					<textarea
 						name="textarea"
 						id="textar"
@@ -90,10 +99,10 @@
 				</form>
 			</footer>
 			<div class="fix-but">
-				<button class="top">
+				<a href="#top" class="top">
 					Top <i class="fa-solid fa-arrow-up"></i>
-				</button>
+                </a>
 			</div>
-		</div>
+		</main>
 	</body>
 </html>
